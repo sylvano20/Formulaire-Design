@@ -17,7 +17,7 @@
     <section class="container">
 
         <!-- debut formulaire de connection  -->
-        <div class="container__signIn">
+        <div class="container__signIn block">
             <!-- partie droite de notre formulaire -->
             <form class="container__left  bg-blanc">
                 <h1 class="container__left__titre color-dark">
@@ -29,41 +29,40 @@
                     <a href=""><i class="fa-brands fa-google-plus-g"></i></a>
                 </div>
                 <span class="choose"> or use your account </span>
-                <input type="email" name="email" id="email" placeholder="Email">
-                <input type="password" name="pass" id="pass" placeholder="Password">
+                <input type="email" name="email" id="email" placeholder="Email" autocomplete="user">
+                <input type="password" name="pass" id=
+                "pass" placeholder="Password" autocomplete="current-password">
                 <span class="choose">Forgot your password ?</span>
 
                 <button class="container__left__button">
                     SIGN IN
                 </button>
-
-
             </form>
             <!-- partie gauche de notre formulaire  -->
             <div class="container__right bg-rouge">
-                <h1 class="container__right__titre   color-white" >Hello,Friend!</h1>
+                <h1 class="container__right__titre   color-white">Hello,Friend!</h1>
                 <p class="container__right__description">Enter your personal details and start journey with us </p>
-                <button class="container__right__button">SIGN UP </button>
+                <button type="submit" class="container__right__button">SIGN UP </button>
 
             </div>
         </div>
         <!-- fin formulaire de connection  -->
 
         <!-- Debut formulaire d'inscription -->
-        <div class="container__signUp">
+        <div class="container__signUp hidden">
             <!-- partie droite de notre formulaire  -->
-            <div class="container__left ">
-                <h1 class="container__left__titre">Welcome Back </h1>
-                <p class="container__lelft__description">To keep connectedwith us please login with your personal info
+            <div class="container__left  bg-rouge">
+                <h1 class="container__left__titre  color-white">Welcome Back </h1>
+                <p class="container__left__description">To keep connectedwith us please login with your personal info
                 </p>
                 <div class="container__left__button">SIGN IN</div>
 
             </div>
 
             <!-- partie gauche de notre formulaire  -->
-            <form class="container__right">
-                <h1 class="container__right__titre">
-                    Sign In
+            <form class="container__right bg-blanc">
+                <h1 class="container__right__titre color-dark">
+                    Create Account
                 </h1>
                 <div class="container__right__social-media">
                     <a href=""><i class="fa-brands fa-facebook-f"></i></a>
@@ -71,10 +70,10 @@
                     <a href=""><i class="fa-brands fa-google-plus-g"></i></a>
                 </div>
                 <span> or use your account </span>
-                <input type="text" name="name" id="name" placeholder="Name">
-                <input type="email" name="email" id="email" placeholder="Email">
-                <input type="password" name="pass" id="pass" placeholder="Password">
-                <span>Forgot your password ?</span>
+                <input type="text" name="nameInscription" id="nameInscription" placeholder="Name">
+                <input type="email" name="emailInscription" id="emailInscription" placeholder="Email" autocomplete="username">
+                <input type="password" name="passInscription" id="passInscription" placeholder="Password" autocomplete="current-password" >
+                <span class="choose">Forgot your password ?</span>
 
                 <button class="container__right__button">
                     SIGN UP
