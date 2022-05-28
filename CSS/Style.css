@@ -1,0 +1,152 @@
+/* font  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* declaration variable  */
+:root {
+    --dark-titre-color: #08415C;
+    --white-titre-color: #fff;
+    --leftContainer-bg-color: #d44b44;
+    --rightContainer-bg-color: #FCCA46;
+    --input-bg-color: #EEEEEE;
+    --boutton-bg-color: #d44b44;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.color-white {
+    color: var(--white-titre-color);
+}
+
+.color-dark {
+    color: var(--dark-titre-color);
+}
+
+.bg-rouge {
+    background-color: var(--leftContainer-bg-color);
+}
+
+.bg-blanc {
+    background-color: var(--white-titre-color);
+}
+
+/*  container generale   */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 60%;
+    height: 65vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*************** debut du style pour formulaire  de connexion *************************/
+.container__signIn {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+        0 10px 10px rgba(0, 0, 0, 0.22);
+
+}
+
+/* debut du style pour la partie left du  formulaire  de connexion */
+.container__signIn>.container__left, .container__signIn>.container__right {
+    width: 50%;
+    height: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container__left__titre, .container__right__titre {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 0.6rem;
+
+}
+
+.container__left__social-media {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.container__left__social-media a {
+    display: flex;
+    font-weight: 900;
+    font-size: 1rem;
+    justify-content: center;
+    align-items: center;
+    width: 2.8rem;
+    height: 2.8rem;
+    border: var(--input-bg-color) solid 2px;
+    border-radius: 50%;
+    color: var(--dark-titre-color);
+}
+
+.choose {
+    font-weight: 200;
+    font-size: 1rem;
+    color: var(--dark-titre-color);
+}
+
+input {
+    padding: 1rem;
+    width: 90%;
+    border: none;
+    background-color: var(--input-bg-color);
+    margin: 0.3rem 0;
+    border-radius: 0.2rem;
+}
+
+.container__left__button, .container__right__button {
+    padding: 1rem 3rem;
+    color: var(--white-titre-color);
+    font-size: 1rem;
+    font-weight: 700;
+    background-color: var(--boutton-bg-color);
+    border: 1px solid var(--white-titre-color);
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+
+/* fin du style pour la partie left du  formulaire  de connexion */
+
+
+/* debut du style pour la partie right du  formulaire  de connexion */
+
+.container__right__description {
+    font-size: 1.1rem;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    line-height: 1.8rem;
+    color: var(--white-titre-color);
+    margin-bottom: 1.8rem;
+}
+
+/* fin du style pour la partie right du  formulaire  de connexion */
+
+/*************** fin du style pour formulaire  de connexion ******************************/
