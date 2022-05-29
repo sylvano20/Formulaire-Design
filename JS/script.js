@@ -1,15 +1,19 @@
-let bouttonConnexion = document.querySelector(".container__right__button");
-let containerSignIn = document.querySelector(".container__signIn");
-let containerSignUp = document.querySelector(".container__signUp");
+let bouttonSignUp = document.getElementById("btnSignUp");
+let bouttonSignIn = document.getElementById("btnSignIn");
+let containerSignIn = document.getElementById("signIn");
+let containerSignUp = document.getElementById("signUp");
+let boutonEnvoieSignIn = document.getElementById("btnEnvoieSignIn");
 
-bouttonConnexion.addEventListener("click", (e) => {
+bouttonSignIn.addEventListener("click", (event) => {
+    event.preventDefault();
+    event.stopPropagation();
+    containerSignIn.classList.add("active");
+})
+bouttonSignUp.addEventListener("click", (e) => {
     e.preventDefault();
-    if (containerSignIn.className = "block") {
-        containerSignIn.className = " ";
-        containerSignIn.className = "hidden";
-        containerSignUp.className = " ";
-        containerSignUp.className = "block";
-
-    }
-
+    e.stopPropagation();
+    containerSignIn.classList.remove("active");
+})
+boutonEnvoieSignIn.addEventListener("click", (e3) => {
+    e3.preventDefault();
 })
